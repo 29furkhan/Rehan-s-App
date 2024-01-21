@@ -1,0 +1,314 @@
+<%- include('header') %>
+    <main class="container mt-4">
+        <div class="row">
+            <!-- This is left card -->
+            <div class="col-md-5 mb-4">
+                <!-- This is a form -->
+                <div class="card-app card text-center">
+                    <div class="card-body">
+                        <h4 class="card-title">Patient Information Form</h4>
+                        <hr>
+                        <form>
+                            <div class="form-container-app">
+                                <div class="mb-3">
+                                    <h6 for="name" class="form-label">
+                                        Name of Patient
+                                        <span class="text-danger">*</span>
+                                    </h6>
+                                    <input type="text" class="form-app form-control" id="name"
+                                        placeholder="Enter the name of patient" required>
+                                </div>
+                                <div class="mb-3">
+                                    <h6 for="age" class="form-label">Age
+                                        <span class="text-danger">*</span>
+                                    </h6>
+                                    <input type="number" class="form-app form-control" id="age"
+                                        placeholder="Enter the age of patient" required>
+                                </div>
+                                <div class="mb-3">
+                                    <h6 for="healthConcern" class="form-label">Current Health Concern <span
+                                            class="text-danger">*</span></h6>
+                                    <input type="text" class="form-app form-control" id="healthConcern"
+                                        placeholder="Enter the current concerns" required>
+                                </div>
+                                <div class="mb-3">
+                                    <h6 for="illnessChronology" class="form-label">Present Illness Chronology <span
+                                            class="text-danger">*</span></h6>
+                                    <textarea class="form-app form-app form-control" id="illnessChronology"
+                                        placeholder="Enter the history of illness" required></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <h6 for="otherIllness" class="form-label">Other Illness Chronology <span
+                                            class="text-danger">*</span></h6>
+                                    <textarea class="form-app form-control" id="otherIllness"
+                                        placeholder="Enter the history of other disease" required></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <h6 for="surgicalHistory" class="form-label">Surgical History <span
+                                            class="text-danger">*</span></h6>
+                                    <textarea class="form-app form-control" id="surgicalHistory"
+                                        placeholder="Enter the history of Surgical History" required></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <h6 for="generalExamination" class="form-label">General Examination <span
+                                            class="text-danger">*</span></h6>
+                                    <textarea class="form-app form-control" id="generalExamination"
+                                        placeholder="Enter the comments of examination" required></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <h6 for="systematicExamination" class="form-label">Systematic Examination <span
+                                            class="text-danger">*</span></h6>
+                                    <textarea class="form-app form-control" id="systematicExamination"
+                                        placeholder="Enter the comments of systematic examination" required></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <h6 for="specialExamination" class="form-label">Special Examination <span
+                                            class="text-danger">*</span></h6>
+                                    <textarea class="form-app form-control" id="specialExamination"
+                                        placeholder="Enter the comments of special examination" required></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <h6 for="possibleDiagnosis" class="form-label">Possible Diagnosis <span
+                                            class="text-danger">*</span></h6>
+                                    <textarea class="form-app form-control" id="possibleDiagnosis"
+                                        placeholder="Enter the comments of diagnosis" required></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <h6 for="treatment" class="form-label">Treatment
+                                        <span class="text-danger">*</span>
+                                    </h6>
+                                    <textarea class="form-app form-control" id="treatment"
+                                        placeholder="Enter the comments of treatment" required></textarea>
+                                </div>
+                            </div>
+                            <hr>
+                            <button type="submit" class="btn btn-app">Insert</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- This is right card -->
+            <div class="col-md-7 mb-4">
+                <div class="card-app card text-center">
+                    <div class="card-body">
+                        <h4 class="card-title">Patient Records</h4>
+                        <hr>
+                        <!-- Search bar and buttons -->
+                        <div class="d-flex mb-3">
+                            <input type="text" class="form-app form-control" placeholder="Enter patient's name">
+                            <button class="btn btn-primary ms-2">SEARCH</button>
+                            <button class="btn btn-success ms-2">EXCEL</button>
+                            <button class="btn btn-danger ms-2">PDF</button>
+                        </div>
+                        <hr>
+                        <!-- THis is a responsive table -->
+                        <div style="max-height: 60.5vh; overflow-y: auto;" class="table-responsive">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Age</th>
+                                        <th>Current Health Concern</th>
+                                        <th>Present Illness Chronology</th>
+                                        <th>Other Illness Chronology</th>
+                                        <th>Surgical History</th>
+                                        <th>General Examination</th>
+                                        <th>Systematic Examination</th>
+                                        <th>Special Examination</th>
+                                        <th>Possible Diagnosis</th>
+                                        <th>Treatment</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Add table rows with data dynamically -->
+                                    <tr style="background-color: #FFEDCB;">
+                                        <td>John Doe</td>
+                                        <td>30</td>
+                                        <td>Fever</td>
+                                        <td>History of Fever</td>
+                                        <td>None</td>
+                                        <td>No surgeries</td>
+                                        <td>Normal</td>
+                                        <td>Regular</td>
+                                        <td>None</td>
+                                        <td>Common Cold</td>
+                                        <td>Rest and fluids</td>
+                                    </tr>
+                                    <tr style="background-color: #fceed3;">
+                                        <td>Jane Smith</td>
+                                        <td>25</td>
+                                        <td>Cough</td>
+                                        <td>History of Cough</td>
+                                        <td>None</td>
+                                        <td>No surgeries</td>
+                                        <td>Normal</td>
+                                        <td>Regular</td>
+                                        <td>None</td>
+                                        <td>Respiratory Infection</td>
+                                        <td>Cough syrup</td>
+                                    </tr>
+                                    <tr style="background-color: #fceed3;">
+                                        <td>Jane Smith</td>
+                                        <td>25</td>
+                                        <td>Cough</td>
+                                        <td>History of Cough</td>
+                                        <td>None</td>
+                                        <td>No surgeries</td>
+                                        <td>Normal</td>
+                                        <td>Regular</td>
+                                        <td>None</td>
+                                        <td>Respiratory Infection</td>
+                                        <td>Cough syrup</td>
+                                    </tr>
+                                    <tr style="background-color: #fceed3;">
+                                        <td>Jane Smith</td>
+                                        <td>25</td>
+                                        <td>Cough</td>
+                                        <td>History of Cough</td>
+                                        <td>None</td>
+                                        <td>No surgeries</td>
+                                        <td>Normal</td>
+                                        <td>Regular</td>
+                                        <td>None</td>
+                                        <td>Respiratory Infection</td>
+                                        <td>Cough syrup</td>
+                                    </tr>
+                                    <tr style="background-color: #fceed3;">
+                                        <td>Jane Smith</td>
+                                        <td>25</td>
+                                        <td>Cough</td>
+                                        <td>History of Cough</td>
+                                        <td>None</td>
+                                        <td>No surgeries</td>
+                                        <td>Normal</td>
+                                        <td>Regular</td>
+                                        <td>None</td>
+                                        <td>Respiratory Infection</td>
+                                        <td>Cough syrup</td>
+                                    </tr>
+                                    <tr style="background-color: #fceed3;">
+                                        <td>Jane Smith</td>
+                                        <td>25</td>
+                                        <td>Cough</td>
+                                        <td>History of Cough</td>
+                                        <td>None</td>
+                                        <td>No surgeries</td>
+                                        <td>Normal</td>
+                                        <td>Regular</td>
+                                        <td>None</td>
+                                        <td>Respiratory Infection</td>
+                                        <td>Cough syrup</td>
+                                    </tr>
+                                    <tr style="background-color: #fceed3;">
+                                        <td>Jane Smith</td>
+                                        <td>25</td>
+                                        <td>Cough</td>
+                                        <td>History of Cough</td>
+                                        <td>None</td>
+                                        <td>No surgeries</td>
+                                        <td>Normal</td>
+                                        <td>Regular</td>
+                                        <td>None</td>
+                                        <td>Respiratory Infection</td>
+                                        <td>Cough syrup</td>
+                                    </tr>
+                                    <tr style="background-color: #fceed3;">
+                                        <td>Jane Smith</td>
+                                        <td>25</td>
+                                        <td>Cough</td>
+                                        <td>History of Cough</td>
+                                        <td>None</td>
+                                        <td>No surgeries</td>
+                                        <td>Normal</td>
+                                        <td>Regular</td>
+                                        <td>None</td>
+                                        <td>Respiratory Infection</td>
+                                        <td>Cough syrup</td>
+                                    </tr>
+                                    <tr style="background-color: #fceed3;">
+                                        <td>Jane Smith</td>
+                                        <td>25</td>
+                                        <td>Cough</td>
+                                        <td>History of Cough</td>
+                                        <td>None</td>
+                                        <td>No surgeries</td>
+                                        <td>Normal</td>
+                                        <td>Regular</td>
+                                        <td>None</td>
+                                        <td>Respiratory Infection</td>
+                                        <td>Cough syrup</td>
+                                    </tr>
+                                    <tr style="background-color: #fceed3;">
+                                        <td>Jane Smith</td>
+                                        <td>25</td>
+                                        <td>Cough</td>
+                                        <td>History of Cough</td>
+                                        <td>None</td>
+                                        <td>No surgeries</td>
+                                        <td>Normal</td>
+                                        <td>Regular</td>
+                                        <td>None</td>
+                                        <td>Respiratory Infection</td>
+                                        <td>Cough syrup</td>
+                                    </tr>
+                                    <tr style="background-color: #fceed3;">
+                                        <td>Jane Smith</td>
+                                        <td>25</td>
+                                        <td>Cough</td>
+                                        <td>History of Cough</td>
+                                        <td>None</td>
+                                        <td>No surgeries</td>
+                                        <td>Normal</td>
+                                        <td>Regular</td>
+                                        <td>None</td>
+                                        <td>Respiratory Infection</td>
+                                        <td>Cough syrup</td>
+                                    </tr>
+                                    <tr style="background-color: #fceed3;">
+                                        <td>Jane Smith</td>
+                                        <td>25</td>
+                                        <td>Cough</td>
+                                        <td>History of Cough</td>
+                                        <td>None</td>
+                                        <td>No surgeries</td>
+                                        <td>Normal</td>
+                                        <td>Regular</td>
+                                        <td>None</td>
+                                        <td>Respiratory Infection</td>
+                                        <td>Cough syrup</td>
+                                    </tr>
+                                    <tr style="background-color: #fceed3;">
+                                        <td>Jane Smith</td>
+                                        <td>25</td>
+                                        <td>Cough</td>
+                                        <td>History of Cough</td>
+                                        <td>None</td>
+                                        <td>No surgeries</td>
+                                        <td>Normal</td>
+                                        <td>Regular</td>
+                                        <td>None</td>
+                                        <td>Respiratory Infection</td>
+                                        <td>Cough syrup</td>
+                                    </tr>
+                                    <tr style="background-color: #fceed3;">
+                                        <td>Jane Smith</td>
+                                        <td>25</td>
+                                        <td>Cough</td>
+                                        <td>History of Cough</td>
+                                        <td>None</td>
+                                        <td>No surgeries</td>
+                                        <td>Normal</td>
+                                        <td>Regular</td>
+                                        <td>None</td>
+                                        <td>Respiratory Infection</td>
+                                        <td>Cough syrup</td>
+                                    </tr>
+                                    <!-- Add more rows as needed -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
