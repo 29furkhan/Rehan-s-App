@@ -1,0 +1,76 @@
+.icons {
+  width: 4%;
+  margin: auto;
+}
+
+.bg-app {
+  background-color: #F4B83D;
+  border-bottom: 3px solid black;
+  color: black;
+}
+
+/* CSS for table */
+table,
+tr,
+th,
+td {
+  border: 3px solid black;
+  padding: 1vh;
+}
+
+.sticky-head {
+  position: sticky;
+  top: -10px;
+  background-color: #F4B83D;
+  border: 3px solid transparent;
+}
+
+th,
+td {
+  width: 200px;
+  white-space: normal;
+}
+
+.btn-app {
+  margin-top: 1%;
+  background-color: #FFEDCB;
+  width: 30%;
+}
+
+.card-app {
+  background-color: #F4B83D;
+  border: 3px solid;
+}
+
+.form-app,
+.form-app:focus {
+  background-color: #FFEDCB;
+}
+
+.form-label {
+  display: block;
+  /* Ensure the label is a block-level element */
+  text-align: left;
+  /* Align the text to the left */
+  margin-bottom: 2%;
+  /* Add some bottom margin for spacing */
+}
+
+.form-container-app {
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.form-container-app {
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.table-responsive {
+  max-height: 60.5vh;
+  overflow-y: "auto"
+}
+
+body {
+  background-color: #FFEDCB;
+}
