@@ -16,6 +16,8 @@ th,
 td {
   border: 3px solid black;
   padding: 1vh;
+  white-space: normal;
+  text-align: justify;
 }
 
 .sticky-head {
@@ -25,16 +27,31 @@ td {
   border: 3px solid transparent;
 }
 
-th,
 td {
-  width: 200px;
-  white-space: normal;
+  height: 10vh;
+  white-space: nowrap;
+  background-color: #FFEDCB;
+  font-size: 0.75rem;
+}
+
+.table-responsive {
+  max-height: 60.5vh;
+  overflow-y: "auto"
 }
 
 .btn-app {
   margin-top: 1%;
   background-color: #FFEDCB;
   width: 30%;
+  border: 3px solid #E0C097;
+  transition: background-color 0.3s ease;
+  /* Add a smooth transition effect */
+}
+
+.btn-app:hover {
+  background-color: #E0C097;
+  /* Change the background color on hover */
+  border: 3px solid #FFEDCB;
 }
 
 .card-app {
@@ -64,11 +81,6 @@ td {
 .form-container-app {
   max-height: 60vh;
   overflow-y: auto;
-}
-
-.table-responsive {
-  max-height: 60.5vh;
-  overflow-y: "auto"
 }
 
 body {

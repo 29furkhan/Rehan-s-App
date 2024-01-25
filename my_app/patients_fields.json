@@ -1,0 +1,16 @@
+{
+    "aadhar": "Aadhar number of patient",
+    "name": "Name of the patient",
+    "age": "Age of the patient",
+    "present_complain": "Present complain to the patient",
+    "history_of_present_complain": "History of present illness",
+    "history_of_other_disease": "History of other disease",
+    "surgical_history": "Surgical history of patient",
+    "general_examination": "General examination comments",
+    "systematic_examination": "Systematic examination comments",
+    "special_examination": "Special examination comments",
+    "possible_diagnosis": "Possible diagnosis",
+    "treatment": "Treatment",
+    "user": "User",
+    "photo": "Photo of the patient"
+}
