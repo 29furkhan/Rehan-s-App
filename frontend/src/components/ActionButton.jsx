@@ -38,7 +38,7 @@ const ActionButton = ({ core_url = "", patient = {}, primary_key = "" }) => {
             </button >
 
             <ReadModal
-                // unique id made sure that modal takes dynamic data
+                //unique id made sure that modal takes dynamic data
                 modal_id={patient.aadhar + "_patient"}
                 patient={patient}
             />
