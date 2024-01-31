@@ -1,6 +1,43 @@
+/* Modals */
+.modal-header-bg {
+  background-color: #F4B83D;
+  border: 1.5px solid black;
+}
+
+.modal-body-bg {
+  background-color: #FFEDCB;
+  border-left: 1.5px solid black;
+  border-right: 1.5px solid black;
+  padding: 6%;
+  overflow-y: auto;
+  height: 70vh;
+}
+
+.modal-footer-bg {
+  background-color: #F4B83D;
+  border: 1.5px solid black;
+}
+
+.photo-app {
+  width: 20%;
+  height: 30%;
+  margin: auto;
+  border: 3px solid black;
+  align-self: center;
+}
+
 .icons {
   width: 4%;
   margin: auto;
+}
+
+.alert-warning-app {
+  display: block;
+  text-align: left;
+  color: tomato;
+  padding: 0.2rem;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 .bg-app {
@@ -52,6 +89,20 @@ td {
   background-color: #E0C097;
   /* Change the background color on hover */
   border: 3px solid #FFEDCB;
+}
+
+.action-btn-app {
+  border: 3px solid white;
+  margin: 2px;
+  font-size: small;
+  display: flex;
+  width: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-btn-app:hover {
+  border: 3px solid #E0C097;
 }
 
 .card-app {

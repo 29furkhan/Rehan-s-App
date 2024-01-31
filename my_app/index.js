@@ -5,9 +5,6 @@ const app = express()
 const path = require('path');
 const connect = require('./mongoose/connect')
 
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
-
 app.use(express.json())
 app.use(cors())
 app.use("/patients", router)
