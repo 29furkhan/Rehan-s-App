@@ -1,7 +1,7 @@
 const mongoose = require("mongoose")
 
 const connect = () => {
-    mongoose.connect("mongodb://localhost:27017/patients", {
+    mongoose.connect("mongodb+srv://root:root@cluster0.tkj9ubo.mongodb.net/patients", {
     }).then(() => {
         console.log("Connected to DB")
         console.log("*********************************")
