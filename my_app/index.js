@@ -8,7 +8,7 @@ const connect = require('./mongoose/connect')
 app.use(express.json())
 
 app.use(cors({
-    origin: "https://rehan-s-app-frontend.vercel.app/",
+    origin: "https://rehan-s-app-frontend.vercel.app",
     methods: ["GET", "POST", "DELETE", "PUT", "PATCH"]
 }))
 
