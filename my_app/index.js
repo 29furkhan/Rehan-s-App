@@ -6,7 +6,12 @@ const path = require('path');
 const connect = require('./mongoose/connect')
 
 app.use(express.json())
-app.use(cors())
+
+app.use(cors({
+    origin: "https://rehan-s-app-jdan.vercel.app/",
+    methods: ["GET", "POST", "DELETE", "PUT"]
+}))
+
 app.use("/patients", router)
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/node_modules', express.static(path.join(__dirname, 'node_modules')));
