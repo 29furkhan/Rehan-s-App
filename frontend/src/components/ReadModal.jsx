@@ -1,7 +1,7 @@
 const ReadModal = ({ modal_id, patient }) => {
     return (
         <>
-            <div className="modal modal-app modal-lg" id={modal_id}>
+            <div className="modal modal-app modal-sm modal-lg" id={modal_id}>
                 <div className="modal-dialog">
                     <div className="modal-content">
                         <div className="text-center modal-header modal-header-bg">
