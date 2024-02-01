@@ -1,4 +1,4 @@
-const Header = ({ title, handleLogout}) => {
+const Header = ({ title, handleLogout, isLoggedIn}) => {
   return (
     <>
         <header className="bg-app text-center py-2">
@@ -8,9 +8,11 @@ const Header = ({ title, handleLogout}) => {
             {title}
           </h1>
           <img className="icons img-icon ml-2" src="/images/doctors.png" alt="Icon 2" />
-          <button onClick={handleLogout} className="btn btn-danger">
-            <i className="fa fa-sign-out"></i>
-          </button>
+          {isLoggedIn && 
+            <button onClick={handleLogout} className="btn btn-danger">
+              <i className="fa fa-sign-out"></i>
+            </button>
+          }
         </div>
       </header>
     </>
