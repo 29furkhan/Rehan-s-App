@@ -9,7 +9,7 @@ app.use(express.json())
 
 app.use(cors({
     origin: "https://rehan-s-app-frontend.vercel.app/",
-    methods: ["GET", "POST", "DELETE", "PUT"]
+    methods: ["GET", "POST", "DELETE", "PUT", "PATCH"]
 }))
 
 app.use("/patients", router)
