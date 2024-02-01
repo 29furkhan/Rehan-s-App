@@ -5,6 +5,13 @@ const patients_data = require('../patients_fields.json')
 const validate = require('../validate.js')
 const xlsx = require('xlsx')
 
+// Testing route
+router.get("/", async (req, res) => {
+    res.status(200).json({
+        message: "Connected to backend"
+    })    
+})
+
 // Home route
 router.get('/api/get', async (req, res) => {
     const data = await Model.find()
