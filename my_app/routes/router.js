@@ -5,6 +5,35 @@ const patients_data = require('../patients_fields.json')
 const validate = require('../validate.js')
 const xlsx = require('xlsx')
 
+router.post('/login', async (req, res) => {
+    const { username, password } = req.body;
+    let found, message;
+
+    if (username === "rehan") {
+        if (password === "ReHaN20013010") {
+            found = true
+            message = "Login successful!"
+        }
+        else {
+            found = false
+            message = "Incorrect password"
+        }
+    }
+    else {
+        found = false
+        message = "Incorrect username"
+    }
+
+    res.status(200).json({
+        found,
+        message
+    })
+});
+
+router.get('/protected', (req, res) => {
+    res.json({ message: 'Protected route accessed successfully' });
+});
+
 // Testing route
 router.get("/", async (req, res) => {
     res.status(200).json({
