@@ -16,7 +16,7 @@ const ReadModal = ({ modal_id, patient }) => {
                             />
                             <hr />
                             {/* skip cols are filtered */}
-                            {Object.keys(patient).filter(column => !(column in { "_id": 0, "user": 0 })).map(column => (
+                            {Object.keys(patient).filter(column => !(column in { "_id": 0, "user": 0, "__v": 0})).map(column => (
                                 <div key={column} className="row">
                                     <div className="col-md-4">
                                         <div key={column} className="mb-2 text-wrap">
