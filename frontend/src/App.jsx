@@ -42,7 +42,7 @@ function App() {
   
   return (
      <>
-      <Header handleLogout={handleLogout} title="वैद्य. रेहान शेख" />
+      <Header handleLogout={handleLogout} isLoggedIn={isLoggedIn} title="वैद्य. रेहान शेख" />
       {isLoggedIn ?
         <Content core_url={core_url} /> :
         <Login onLogin={handleLogin} />
